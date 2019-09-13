@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RocApp.SignUpPage">
+    <!--Pages can be added as references or inline-->
+
+
+    <ContentPage Title="Tab 2" >
+        <StackLayout  Margin="0,60,0,0" Padding="10">
+            <Label Text="Are You?" TextColor="DeepSkyBlue" FontAttributes="Bold" FontSize="Large" HorizontalTextAlignment="Center"/>
+            <Picker Title="Extraverted and Enthusiastic" x:Name="mood1" HorizontalOptions="FillAndExpand"/>
+            <Picker Title="Critical and QuarrelSome" x:Name="mood2" HorizontalOptions="FillAndExpand"/>
+            <Picker Title="Dependable and Self-Disciplined" x:Name="mood3" HorizontalOptions="FillAndExpand"/>
+            <Picker Title="Anxious and Easily Upset" x:Name="mood4" HorizontalOptions="FillAndExpand"/>
+
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Tab 3" >
+        <StackLayout Margin="0,60,0,0" Padding="10">
+            <Label Text="Are You?" TextColor="DeepSkyBlue" FontAttributes="Bold" FontSize="Large" HorizontalTextAlignment="Center"/>
+            <Picker Title="Open to New Experience and Complex" x:Name="mood5" HorizontalOptions="FillAndExpand"/>
+            <Picker Title="Reserved and Quite" x:Name="mood6" HorizontalOptions="FillAndExpand"/>
+            <Picker Title="Sympathetic and Warm" x:Name="mood7" HorizontalOptions="FillAndExpand"/>
+            <Picker Title="Disorganised and Careless" x:Name="mood8" HorizontalOptions="FillAndExpand"/>
+
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Tab 1" >
+        <StackLayout  Margin="0,60,0,0" Padding="10">
+            <Label Text="Sign Up" TextColor="DeepSkyBlue" FontAttributes="Bold" FontSize="Large" HorizontalTextAlignment="Center"/>
+            <Entry Placeholder="Fullname" x:Name="fullname" HorizontalOptions="FillAndExpand"/>
+            <Entry Placeholder="Username" x:Name="username" HorizontalOptions="FillAndExpand"/>
+            <Entry Placeholder="Password" x:Name="password" IsPassword="True" HorizontalOptions="FillAndExpand"/>
+            <Entry Placeholder="Confirm Password" x:Name="confirmPassword"  IsPassword="True" HorizontalOptions="FillAndExpand"/>
+            <Button Text="Sign Up" BackgroundColor="DeepSkyBlue" TextColor="White" x:Name="signUpbt" Clicked="signUpbt_Clicked"/>
+        </StackLayout>
+    </ContentPage>
+</CarouselPage>
+   

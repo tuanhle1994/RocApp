@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RocApp.SignUpPage">
+  
+  <StackLayout VerticalOptions="CenterAndExpand"
+               Margin="20">
+    <Label x:Name="Icon2"
+           Text="ROC"
+           TextColor="DodgerBlue"
+           FontSize="100"
+           HorizontalTextAlignment="Center"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="CenterAndExpand"/>
+    <Entry x:Name="emailEntry"
+           Margin="0,50,0,0"
+           Placeholder="Email Address"
+           Keyboard="Email"/>
+    <Entry x:Name="passwordEntry"
+           Placeholder="Password"
+           IsPassword="True"/>
+    <Entry x:Name="confirmPasswordEntry"
+           Placeholder="Confirm Password"
+           IsPassword="True"/>
+    <Button x:Name ="registerButton"
+           Text="Register"
+           Margin="0,50,0,0"
+           Clicked="RegisterButton_Clicked"
+           BackgroundColor="DodgerBlue"
+           TextColor="White"/>
+  </StackLayout>
+</ContentPage>
